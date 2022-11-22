@@ -1,0 +1,114 @@
+@charset "UTF-8";
+*{
+    padding: 0px;
+    margin: 0px;
+}
+@font-face {
+    font-family: "adilson";
+    src: url("../fonts/Vampire\ Wars.ttf") format("truetype");
+    font-weight: lighter;
+    font-style: italic;
+}
+@font-face {
+    font-family: "junior";
+    src: url("../fonts/RobotoSlab-Regular.ttf") format("truetype");
+}
+:root{
+    --cor0: #ffffff;
+    --cor1: #000000;
+    --cor2: #ebe5c5;
+    --cor3: #3d5a5a;
+    --cor4: #426161;
+    --cor5: #3e5858;
+    --cor6: #375050;
+    --cor7: #131b1b;
+
+    --font-destaque: "adilson";
+    --font-subdestaque: "junior";
+    --font-padrao: Verdana, Arial, Sans-Serif;
+}
+body{
+    font-family: var(--font-padrao);
+    background-color: var(--cor2);
+}
+a.externo::after{
+    content: "\00A0\1F517";
+}
+header{
+    min-height: 100px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor7));
+    padding: 30px;
+    font-size: 3em;
+    font-weight: lighter;
+    font-style: italic;
+    text-shadow: 2px 2px 0px #00000044;
+}
+header > h1{
+    color: var(--cor0);
+    font-family: var(--font-destaque);
+    text-shadow: 2px 2px 0px #00000044;
+}
+nav{
+    background-color: var(--cor7);
+    padding: 10px;
+    box-shadow: 0px 7px 7px #00000031;
+    text-align: center;
+}
+nav > a{
+    color: #ffffff;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+nav > a:hover{
+    background-color: var(--cor3);
+    color: var(--cor1);
+}
+main{
+    margin: auto;
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: var(--cor0);
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 10px #0000006b;
+}
+main p{
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1em;
+    margin: 15px 0px; 
+    padding: 10px;
+}
+main h2{
+    padding: 10px;
+}
+div.video{
+    background-color: var(--cor3);
+    padding-bottom: 30%;
+    position: relative;
+    margin: 0px -20px 20px -20px;
+}
+div.video > video{
+    position: absolute;
+    top: 1%;
+    bottom: 1%;
+    left: 24%;
+    right: 24%;
+    width: 50%;
+    height: 98%;
+    border-radius: 10px;
+}
+footer{
+    background-color: var(--cor7);
+    color: var(--cor0);
+    text-align: center;
+    font-size: 0.8em;
+    padding: 10px;
+}

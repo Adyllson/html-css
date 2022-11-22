@@ -1,0 +1,85 @@
+@charset "UTF-8";
+@font-face {
+    font-family: Adilson;
+    src: url("../fonts/Vampire\ Wars.ttf") format("Truetype");
+}
+@font-face {
+    font-family: "Breezy";
+    src: url("../fonts/RobotoSlab-Regular.ttf") format("Truetype");
+}
+body{
+    background-image: radial-gradient(circle, #02e0f0, #07cbda, #00f7ff);
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.log{
+    width: 380px;
+    height: 500px;
+    background-color: white;
+    box-shadow: 5px 8px 8px #01bbc9;
+    border-radius: 9px;
+}
+h1{
+    text-decoration: underline;
+    text-align: center;
+    font-family: "Adilson";
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 22px;
+    color: #566a7f;
+    text-shadow: 4px 2px 3px #566a7f71;
+}
+p{
+    font-family: "Breezy";
+    color: #566a7f;
+}
+.quad{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reme{
+    padding: 8px 0 ;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;   
+}
+form label{
+    font-family: "Breezy";
+    font-size: 16px;
+    font-weight: normal;
+    color: #566a7f;
+    text-transform: inherit;
+    margin: 10px 0;
+}
+form input[type=password], input[type=text]{
+    width: 98%;
+    height: 33px;
+    border: #d9dee3 solid 1px; 
+    border-radius: 6px;
+    color: #697a8d;
+    font-style: italic;
+}
+form input[type=submit]{
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+    border: #696cff solid 1px; border-radius: 6px;
+    color: #697a8d;
+    font-family: "Adilson";
+    background: #696cff;
+    color:white;
+    cursor: pointer;
+    transition: all 0.6s;
+}
+form input[type=submit]:hover{
+    transform: translateY(-6px);
+    color: #696cff;
+    background:#ffffff;
+}

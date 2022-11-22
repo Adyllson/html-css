@@ -1,0 +1,103 @@
+@font-face{
+    font-family: Adilson;
+    src: url(fonts/20thfont.ttf);
+}
+@font-face{
+    font-family: breezy;
+    src: url(fonts/Lato-Italic.ttf);
+}
+body{
+    background: lightseagreen;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+}
+.log{
+    background: white;
+    width: 400px;
+    height: 550px;
+    border-radius: 8px;
+    box-shadow: lightgoldenrodyellow 1px 1px 1px 0px;
+    display: flex;
+}
+form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+form h1{
+    font-family: Adilson;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700PX;
+    letter-spacing: 1px;
+    color: #232463;
+}
+form p{ 
+    font-family: Breezy;
+    font-size: 20px;;
+    color: #566a7f;
+    text-transform: inherit;
+}
+form label{
+    font-family:Adilson;
+    font-size: 20px;;
+    color: #566a7f;
+    text-transform: unset;
+    margin: 10px 0;
+}
+form #em {
+    width: 90%;
+    height: 15px;
+    border-radius: 9px;
+    color: black;
+    border: solid 1px #e5e5e5;
+    background: #f5f5f5;
+    padding: 15px;
+    font-family: Adyllson;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+form #pas {
+    width: 90%;
+    height: 15px;
+    border-radius: 9px;
+    color: black;
+    border: solid 1px #e5e5e5;
+    background: #f5f5f5;
+    padding: 15px;
+    font-family: Adyllson;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+.rem{
+    padding: 20px 0; ;
+}
+.rem label{ 
+        font-family:Adilson ;
+        font-size: 15px;;
+        color: #566a7f;
+}
+form input[type=submit]  {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+    border: #696cff solid 1px; border-radius: 6px;;
+    font-weight: 500;
+    color: #697a8d;
+    font-family: Adilson;
+    background: #696cff;
+    color:white;
+    box-shadow: 0 0.125rem 0.25rem 0 rgb(105, 108, 255 /40%);
+    cursor: pointer;
+    transition: all 0.6s;
+}
+form input[type=checkbox]  {
+        
+}
+form input[type=submit]:hover{
+    transform: translateY(-6px);
+    background: #4f52ff;
+}

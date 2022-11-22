@@ -1,0 +1,86 @@
+@font-face {
+    font-family: "adilson";
+    src: url("../fonts/Vampire\ Wars.ttf") format("truetype");
+    font-size: 1em;
+    font-weight: lighter;
+}
+@font-face {
+    font-family: "nascimento";
+    src: url("../fonts/RobotoSlab-Regular.ttf") format("truetype");
+    font-weight: normal;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+:root{
+    --cor0: #68676c;
+    --cor1: #1b1d5a;
+    --cor2: #1b1f88;
+    --cor3: #0b11bd;
+    --cor4: #585cce;
+    --cor5: #1017f3;
+    --cor6: #ebe5c5;
+
+    --font-padrao: Arial, Verdana, Helvetica, Sans-serif;
+    --font-destaque: "adilson";
+    --font-subdestaque: "nascimento";
+}
+body{
+    background-color: var(--cor6);
+    font-family: var(--font-padrao);
+}
+header{
+    padding-top: 30px;
+    min-height: 150px;
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor1));
+    box-shadow: 0px 7px 7px #00000031;
+}
+header  h1{
+    font-family: var(--font-destaque);
+    display: inline;
+    margin: auto;
+    text-shadow: 2px 2px 0px #00000044;
+    color: var(--cor0);
+    text-decoration: underline;
+    padding-left: 80px;
+}
+
+header > nav a{
+    padding: 10px;
+    margin-right: 30px;
+    text-align: left;
+    font-weight: bolder;
+    color: var(--cor0);
+    text-decoration: none;
+    transition-duration: 0.5s;
+    border-radius: 5px;
+}
+header > nav a:hover{
+    color: var(--cor2);
+    background-color: var(--cor5);
+}
+header nav{
+    text-align: right;
+    padding-bottom: 10px;
+}
+main{
+    background-color: #ffffff;
+    margin: auto;
+    padding: 20px;
+    min-width: 300px;
+    max-width: 1000px;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 10px #0000006b;
+}
+main h1{
+    font-family: var(--font-subdestaque);
+}
+footer{
+    background-color: var(--cor1);
+    color: #ffffff;
+    text-align: center;
+    padding: 6px;
+}

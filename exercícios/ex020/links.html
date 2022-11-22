@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            background-color: lightslategray;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 17px;
+            font-weight: bolder;
+            font-style: italic;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        a:visited{
+            color: green;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: yellow;
+        }
+     .especial::after{
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkblue;
+        }
+        div > p{
+            display: none;
+        }
+        div:hover>p{
+            display: block;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul type="circle">
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#" class="especial">Instagram</a></li>
+        <li><a href="#">Twitter</a></li>
+    </ul>
+    <div>
+        Adyllson
+        <p>Essa é uma página para prátiva</p>
+    </div>
+</body>
+</html>
